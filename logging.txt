@@ -1,0 +1,36 @@
+Request method:	POST
+Request URI:	https://fakestoreapi.com/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "donero",
+    "password": "ewedon"
+}
+HTTP/1.1 200 OK
+Date: Thu, 06 Feb 2025 06:58:50 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"95-K54WYupCWMjlLwReL6MzPUzJr8c"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0OZbWz0AJNrSmyvQ8eJhMOXPI%2Bs9h%2BCaet9wB4GBftpZosJRhix9GvcL3rbN%2FVCBLAe9H8k%2BB1cKLBogxt5J4XG3eJxOfeZSpJ2zm4AyL1om15dVejUBHVeQelXXcedZjuLg"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 90d9410bdfa9f027-LHR
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=192582&min_rtt=192565&rtt_var=72247&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=893&delivery_rate=21794&cwnd=252&unsent_bytes=0&cid=eaf286267ca2bf62&ts=324&x=0"
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXIiOiJkb25lcm8iLCJpYXQiOjE3Mzg4MjUxMzB9.IPw02Z1YxXdjii15o7X-Tv82Y5dBgwAYWV5iPPPksvQ"
+}

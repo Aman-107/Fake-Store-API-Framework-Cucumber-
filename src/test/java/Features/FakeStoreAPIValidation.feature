@@ -9,6 +9,7 @@ Examples:
 | username | password |
 |   johnd  | m38rmF$  |
 |kevinryan | kev02937@|
+|  donero  |  ewedon  |
 
 # Scenario Outline: Verify if Place is being Successfully added using AddPlaceAPI
 #	Given Add Place Payload with "<name>","<language>","<place>"
