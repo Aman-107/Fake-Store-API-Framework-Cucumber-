@@ -16,12 +16,14 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utils {
 	
-	RequestSpecification reqspec;
+	public static RequestSpecification reqspec;
 	
 	public RequestSpecification requestSpecification() throws IOException {
 		
-		FileOutputStream file = new FileOutputStream("logging.txt");
-		PrintStream log = new PrintStream(file);
+		if(reqspec == null) {
+		
+			FileOutputStream file = new FileOutputStream("logging.txt");
+			PrintStream log = new PrintStream(file);
 		
 		reqspec = new RequestSpecBuilder()
 				.setBaseUri(getGlobalProperties("baseUrl"))
@@ -29,8 +31,8 @@ public class Utils {
 				.addFilter(ResponseLoggingFilter.logResponseTo(log))
 				.setContentType(ContentType.JSON).build();
 		
+		}
 		return reqspec;
-		
 	}
 
 	public String getGlobalProperties(String variable) throws IOException {
@@ -42,10 +44,15 @@ public class Utils {
 		return (properties.getProperty(variable));
 	}
 	
-	public Object getJsonPath(Response response, String key) {
+	public String getJsonPath(Response response, String key) {
 		
 		JsonPath js = response.jsonPath();
-		return (js.get(key));
+		return (js.get(key));	
+	}
+	
+    public int getJsonPathInt(Response response, String key) {
 		
+		JsonPath js = response.jsonPath();
+		return (js.getInt(key));	
 	}
 }

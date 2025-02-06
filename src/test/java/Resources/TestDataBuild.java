@@ -1,5 +1,7 @@
 package Resources;
 
+import java.util.HashMap;
+
 import POJO.CreateLoginReq_Address;
 import POJO.CreateLoginReq_Address_Geolocation;
 import POJO.CreateLoginReq_Name;
@@ -34,11 +36,37 @@ public class TestDataBuild {
 		return createLogin;
 	}
 	
-	public String Login(String username, String password) {
+	public String login(String username, String password) {
 		
 		return ("{\r\n"
 				+ "                \"username\": \""+username+"\",\r\n"
 				+ "                \"password\": \""+password+"\"\r\n"
 				+ "}");
+	}
+
+	public HashMap<String, Object> productsBody(String title, String category,String description, String image) {
+		
+		HashMap<String,Object> payload = new HashMap<String,Object>();
+		
+		if(title != null) {
+		payload.put("title", title);
+		} else payload.put("title", "test product");
+		
+		payload.put("price", 20.5);
+		
+		if(description != null) {
+			payload.put("description", description);
+			} else payload.put("description", "lorem ipsum set");
+		
+		if(image != null) {
+			payload.put("image", image);
+			} else payload.put("image", "https://i.pravatar.cc");
+		
+		if(category != null) {
+			payload.put("category", category);
+			} else payload.put("category", "electronic");
+	
+		return payload;
+		
 	}
 }

@@ -15,7 +15,6 @@ Here are the possible **use cases** for automating the [FakeStoreAPI](https://fa
 - ✅ Validate login with **invalid credentials**
 - ✅ Validate login with **missing username/password**
 - ✅ Check response time and status code for authentication API
-- ✅ Validate response schema for authentication API
 
 ---
 
