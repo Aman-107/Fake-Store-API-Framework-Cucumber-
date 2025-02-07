@@ -15,24 +15,24 @@ Body:
     "password": "m38rmF$"
 }
 HTTP/1.1 200 OK
-Date: Fri, 07 Feb 2025 04:34:26 GMT
+Date: Fri, 07 Feb 2025 12:21:25 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"94-3knfgrX+1M41BSIE21+ZCs1xWkE"
+etag: W/"94-T9Fd8zqre3mkuV+C3wwBI638B68"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9hwpw10%2FgG7mhwwrkz70vaugtOaz9UQX7guIoCL5fpXq%2BiQR9fo0MP45lm0Z9tvGo0uKId4Z9n%2FXQlq4G8vycJ2S0JCTf%2Bb283hoL75GAopwX%2B0Wsc330J3ybq2LxAwqfsHF"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=DTCTKacKBcPL3uk5D9R9Nzr72fohO7Nr3tuSJwCOjv%2F47vHGQE75sBaOvVbqtqrbvodvJLm9JrVhF0dqzJCpQTiTny1ZwWJVwwhv%2Boynd64%2BX6R3VZlioNcFG%2FNkX7MW5ySP"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90e0aadfc8069473-LHR
+CF-RAY: 90e356f45dc2e214-MRS
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=176823&min_rtt=175405&rtt_var=66790&sent=6&recv=6&lost=0&retrans=0&sent_bytes=3127&recv_bytes=893&delivery_rate=23944&cwnd=252&unsent_bytes=0&cid=789b535426e8bf18&ts=387&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=147411&min_rtt=147340&rtt_var=55303&sent=6&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=893&delivery_rate=25451&cwnd=252&unsent_bytes=0&cid=bc39a4b498f35e4b&ts=410&x=0"
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXIiOiJqb2huZCIsImlhdCI6MTczODkwMjg2Nn0.mjwWE8Jo8mkcV_lROhvZZoEiTyEZvKr9R6ZMIc--Syg"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXIiOiJqb2huZCIsImlhdCI6MTczODkzMDg4NX0.e5LEqtJ7hx67RB_wKV3YO5kR0l8JHyXPL2dOnymJWsQ"
 }
 Request method:	GET
 Request URI:	https://fakestoreapi.com/products
@@ -47,7 +47,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 07 Feb 2025 04:34:26 GMT
+Date: Fri, 07 Feb 2025 12:21:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -55,284 +55,13 @@ access-control-allow-origin: *
 etag: W/"297c-h+n6NsR3M51S6528jZo3BluzvtU"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=x0LkiWUYVfsnlrDDmkAZN3iR%2FFFZku3c4NbXQX0wlis4U9nxWDFyGmRvFOfWS%2Fuj89iyiY0j0Tfv6NDHDDqq5nyx8sfefGS6w2w9Pu3AszMWIkp17KZk%2BVIo%2FSINxr7cI7Yy"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=dYN9jch7avNnG0drRjjCOlLISIswidkOFASXbtcsKhBrtbnuZZpdLRhqnam0yY4H4T8sr0kLKVfZxphpMyo1fUWkITedqc7BGonQvwYebxqIw5%2BCcaGAvV%2F0PMYuRcEvc97p"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90e0aae519b6f257-LHR
+CF-RAY: 90e356f91c6b11b4-MRS
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=184923&min_rtt=184921&rtt_var=69350&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=789&delivery_rate=22709&cwnd=252&unsent_bytes=0&cid=3523d6f4f6cd72b0&ts=235&x=0"
-
-[
-    {
-        "id": 1,
-        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-        "price": 109.95,
-        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-        "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        "rating": {
-            "rate": 3.9,
-            "count": 120
-        }
-    },
-    {
-        "id": 2,
-        "title": "Mens Casual Premium Slim Fit T-Shirts ",
-        "price": 22.3,
-        "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-        "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "rating": {
-            "rate": 4.1,
-            "count": 259
-        }
-    },
-    {
-        "id": 3,
-        "title": "Mens Cotton Jacket",
-        "price": 55.99,
-        "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-        "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-        "rating": {
-            "rate": 4.7,
-            "count": 500
-        }
-    },
-    {
-        "id": 4,
-        "title": "Mens Casual Slim Fit",
-        "price": 15.99,
-        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-        "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-        "rating": {
-            "rate": 2.1,
-            "count": 430
-        }
-    },
-    {
-        "id": 5,
-        "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-        "price": 695,
-        "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-        "category": "jewelery",
-        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-        "rating": {
-            "rate": 4.6,
-            "count": 400
-        }
-    },
-    {
-        "id": 6,
-        "title": "Solid Gold Petite Micropave ",
-        "price": 168,
-        "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-        "category": "jewelery",
-        "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-        "rating": {
-            "rate": 3.9,
-            "count": 70
-        }
-    },
-    {
-        "id": 7,
-        "title": "White Gold Plated Princess",
-        "price": 9.99,
-        "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-        "category": "jewelery",
-        "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-        "rating": {
-            "rate": 3,
-            "count": 400
-        }
-    },
-    {
-        "id": 8,
-        "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-        "price": 10.99,
-        "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
-        "category": "jewelery",
-        "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-        "rating": {
-            "rate": 1.9,
-            "count": 100
-        }
-    },
-    {
-        "id": 9,
-        "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-        "price": 64,
-        "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
-        "category": "electronics",
-        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-        "rating": {
-            "rate": 3.3,
-            "count": 203
-        }
-    },
-    {
-        "id": 10,
-        "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-        "price": 109,
-        "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
-        "category": "electronics",
-        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-        "rating": {
-            "rate": 2.9,
-            "count": 470
-        }
-    },
-    {
-        "id": 11,
-        "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-        "price": 109,
-        "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
-        "category": "electronics",
-        "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
-        "rating": {
-            "rate": 4.8,
-            "count": 319
-        }
-    },
-    {
-        "id": 12,
-        "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-        "price": 114,
-        "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
-        "category": "electronics",
-        "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
-        "rating": {
-            "rate": 4.8,
-            "count": 400
-        }
-    },
-    {
-        "id": 13,
-        "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-        "price": 599,
-        "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
-        "category": "electronics",
-        "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
-        "rating": {
-            "rate": 2.9,
-            "count": 250
-        }
-    },
-    {
-        "id": 14,
-        "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-        "price": 999.99,
-        "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-        "category": "electronics",
-        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-        "rating": {
-            "rate": 2.2,
-            "count": 140
-        }
-    },
-    {
-        "id": 15,
-        "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-        "price": 56.99,
-        "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
-        "rating": {
-            "rate": 2.6,
-            "count": 235
-        }
-    },
-    {
-        "id": 16,
-        "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-        "price": 29.95,
-        "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
-        "rating": {
-            "rate": 2.9,
-            "count": 340
-        }
-    },
-    {
-        "id": 17,
-        "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-        "price": 39.99,
-        "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
-        "rating": {
-            "rate": 3.8,
-            "count": 679
-        }
-    },
-    {
-        "id": 18,
-        "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
-        "price": 9.85,
-        "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
-        "rating": {
-            "rate": 4.7,
-            "count": 130
-        }
-    },
-    {
-        "id": 19,
-        "title": "Opna Women's Short Sleeve Moisture",
-        "price": 7.95,
-        "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-        "rating": {
-            "rate": 4.5,
-            "count": 146
-        }
-    },
-    {
-        "id": 20,
-        "title": "DANVOUY Womens T Shirt Casual Cotton Short",
-        "price": 12.99,
-        "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-        "category": "women's clothing",
-        "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-        "rating": {
-            "rate": 3.6,
-            "count": 145
-        }
-    }
-]
-Request method:	GET
-Request URI:	https://fakestoreapi.com/products
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Fri, 07 Feb 2025 04:34:27 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-access-control-allow-origin: *
-etag: W/"297c-h+n6NsR3M51S6528jZo3BluzvtU"
-x-powered-by: Express
-cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=%2FiVYpZR1xsb2MM50PL%2BXLKmRCMkDnK3BGbXnkvz8fHLZIHMjXtZud1E5EW6lcrSyFgMyScHgYY4Ib4IQsZAoK%2FGFeOmZ4hJgrWmXokFCkTK9RVIRda3pe7bwYcIKXOYDy2Gj"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 90e0aaeaa81cbd6d-LHR
-Content-Encoding: gzip
-alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=186441&min_rtt=185181&rtt_var=70343&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=789&delivery_rate=22680&cwnd=252&unsent_bytes=0&cid=2efb2ab5890e5e61&ts=218&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=146911&min_rtt=146869&rtt_var=55161&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3129&recv_bytes=789&delivery_rate=25473&cwnd=238&unsent_bytes=0&cid=1950773feb26dd9d&ts=213&x=0"
 
 [
     {
@@ -589,7 +318,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 07 Feb 2025 04:34:28 GMT
+Date: Fri, 07 Feb 2025 12:21:27 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -597,13 +326,13 @@ access-control-allow-origin: *
 etag: W/"2d2-QzYw+X+hXsi2K/VFAJ3/XdI9Dbc"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=fXFR5BWgvWAcdfEulH36C6APVXlqf6xJp8QB8LeB1ep08uI016dAuO4dlTR5UX3MvMZQf1sfMndKR%2BTvdCZEvFj2VW%2FImx1ZYv4XmHI9cMEc4V03Fq5fW9cMoWsKi5ZtDnom"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xkBsVZnkzp8bKzejijTKrze9%2FaPTnqNl2DillXM5B51A2VsNP8egT%2BH9WpIG%2BhBf%2FufLjkb6ulRUvWpgVzdPJsCo9cK1DTB%2FiOgkrdSPGE8YcwTxINUGdU7Ecc%2BTQmZljR3z"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90e0aaef7e8303bb-LHR
+CF-RAY: 90e356fcebbde17b-MRS
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=262329&min_rtt=200231&rtt_var=119443&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=792&delivery_rate=20975&cwnd=252&unsent_bytes=0&cid=859fd2b7d9523df0&ts=232&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=159028&min_rtt=159001&rtt_var=59644&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=792&delivery_rate=23584&cwnd=252&unsent_bytes=0&cid=bfe8dc16b94cf9dd&ts=220&x=0"
 
 {
     "id": 10,
@@ -617,6 +346,109 @@ server-timing: cfL4;desc="?proto=TCP&rtt=262329&min_rtt=200231&rtt_var=119443&se
         "count": 470
     }
 }
+Request method:	GET
+Request URI:	https://fakestoreapi.com/products/category/electronics
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 12:21:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"e2b-QoauVlMdwav0bbI57A3Xc4mdUEs"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=rV%2Bl0LfoJMNGCY6uEl7eCAKoApQRhkE6ruG4t2jmvULbn0BMKnh0rhzc6%2FQY9d8WiQ9v2u36aeUmv2Sa6G72CRps43o7g%2FNN4MZkGuLLzddbsSKTzxwpBzBDtKULboA5oeS4"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 90e35702db720cf5-MRS
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=146456&min_rtt=146148&rtt_var=55025&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3127&recv_bytes=810&delivery_rate=25658&cwnd=252&unsent_bytes=0&cid=302f4a940d23060d&ts=300&x=0"
+
+[
+    {
+        "id": 9,
+        "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+        "price": 64,
+        "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+        "rating": {
+            "rate": 3.3,
+            "count": 203
+        }
+    },
+    {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        "price": 109,
+        "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 2.9,
+            "count": 470
+        }
+    },
+    {
+        "id": 11,
+        "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+        "price": 109,
+        "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+        "rating": {
+            "rate": 4.8,
+            "count": 319
+        }
+    },
+    {
+        "id": 12,
+        "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+        "price": 114,
+        "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 4.8,
+            "count": 400
+        }
+    },
+    {
+        "id": 13,
+        "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+        "price": 599,
+        "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 2.9,
+            "count": 250
+        }
+    },
+    {
+        "id": 14,
+        "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+        "price": 999.99,
+        "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 2.2,
+            "count": 140
+        }
+    }
+]
 Request method:	POST
 Request URI:	https://fakestoreapi.com/products
 Proxy:			<none>
@@ -637,7 +469,7 @@ Body:
     "category": "electronic"
 }
 HTTP/1.1 200 OK
-Date: Fri, 07 Feb 2025 04:34:29 GMT
+Date: Fri, 07 Feb 2025 12:21:29 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -645,13 +477,13 @@ access-control-allow-origin: *
 etag: W/"85-Wc9onS4WiYRqBYCEA9mjLdeESpg"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=i%2FwJlQpMCM17m4hftFjpvUF2c%2Fb7xsB1qQ8foK2So7RnQbeL4HZjTvKbQiwrCupfMJbcsUxy%2BKGRZemSjjQT44tOwcQcN7nOJ%2F6%2BFZlc%2BUJYgxFS1jJrFnoPK7Wgo%2BiG4CDz"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=5NUbwKlps%2FV1X3seG0XDBrHSUKrHk8nkWdtnM9P62gr2n8mC5QNyGkqltUbV%2FvbNErzFE996V572rMsqRwAVrp589bwNJtM154LZGiM1waizm%2FUiUBVEtqtq5zmCjPKv9ktE"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90e0aaf72a0271db-LHR
+CF-RAY: 90e35708a92e11b4-MRS
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=206741&min_rtt=204795&rtt_var=78188&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3129&recv_bytes=936&delivery_rate=20508&cwnd=252&unsent_bytes=0&cid=b6f07d383590bf68&ts=238&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=155921&min_rtt=155858&rtt_var=58492&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=936&delivery_rate=24060&cwnd=238&unsent_bytes=0&cid=c4d6ff6303ae49d3&ts=217&x=0"
 
 {
     "id": 21,
@@ -662,7 +494,7 @@ server-timing: cfL4;desc="?proto=TCP&rtt=206741&min_rtt=204795&rtt_var=78188&sen
     "category": "electronic"
 }
 Request method:	PUT
-Request URI:	https://fakestoreapi.com/products/21
+Request URI:	https://fakestoreapi.com/products/10
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -681,24 +513,24 @@ Body:
     "category": "electronic"
 }
 HTTP/1.1 200 OK
-Date: Fri, 07 Feb 2025 04:34:30 GMT
+Date: Fri, 07 Feb 2025 12:21:29 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"83-bGTFlCh4+5tur+19vNVECrwoiGQ"
+etag: W/"83-JSqeAm4r68eYsfFvEIe2rWhFVsE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=6JEbMBTbvXyO3Uouqz6yklJrzI4n2HIZ0%2FAutc1XuX%2FcV9NidoN%2Fr%2Bncz5P4KydTbtMGZt6ibusr2e60YUrGdpq33MadOF5kIvudCkCGgUdrFfW7OkBrQMDjYZDDfZcidn3B"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=8tOhHZ6h8eJ6beLidlmMqbD8%2BsSLHPrfpIJP9YcXzRgAUlnS4iihcqoJpPMQJF4Yic9bqxQRF7mhOlVG%2Blmo6b6cIsN%2Fk1n4lk7NXBN%2FhrkaJuI0ZkGKopFin1KIZWMkt55f"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90e0aafb3df6f257-LHR
+CF-RAY: 90e3570c1f580cf5-MRS
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=183335&min_rtt=183130&rtt_var=68820&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3129&recv_bytes=936&delivery_rate=22934&cwnd=252&unsent_bytes=0&cid=7a0fee6008eb668b&ts=229&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=154014&min_rtt=153798&rtt_var=57828&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3127&recv_bytes=936&delivery_rate=24382&cwnd=252&unsent_bytes=0&cid=28c9caf72067a7cf&ts=207&x=0"
 
 {
-    "id": 21,
+    "id": 10,
     "title": "test product",
     "price": 13.5,
     "description": "shadow ipsum set",
@@ -718,7 +550,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 07 Feb 2025 04:34:31 GMT
+Date: Fri, 07 Feb 2025 12:21:30 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -726,13 +558,13 @@ access-control-allow-origin: *
 etag: W/"2d2-QzYw+X+hXsi2K/VFAJ3/XdI9Dbc"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=mqekfMNTxERSQkRE1G3hHx65Hp3r5aCK3wBkkleNcRRotqdhFaAAc%2Fu6q3vFe7bd69LJThH4ku7mnGXpSmaaq6My4v3BrvDmnjOfcMkKSpREXvxSjxS%2FQoH%2B9bjJtLtH5%2F8f"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=1Hd1nKPHGNQw28zEn6jowRsUpTU3tDerWxD%2BEiR0YyJzTeWj7z5YBhfMccZssrm65qomuXfDcOhY53m1xyEagNarFB%2Fv3Eiz9djd3Z%2BhcOvuS8lNCF5aPMIFdJwJ3eSkYBKM"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90e0ab002bd1bd6d-LHR
+CF-RAY: 90e3570fc8fbe17b-MRS
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=205603&min_rtt=197133&rtt_var=79975&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=795&delivery_rate=21305&cwnd=252&unsent_bytes=0&cid=63d225c1b7390ffb&ts=324&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=163505&min_rtt=163410&rtt_var=61469&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=795&delivery_rate=22841&cwnd=252&unsent_bytes=0&cid=5cab669798ea0d33&ts=311&x=0"
 
 {
     "id": 10,

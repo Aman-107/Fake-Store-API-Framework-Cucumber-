@@ -4,10 +4,11 @@ public enum ResourceAPI {
 	
 	UserLogin("/auth/login"),
 	GetAllProducts("/products"),
-	GetSingleProducts("/products/{id}"),
+	GetSingleProducts("/products/{key}"),
 	AddNewProducts("/products"),
-	UpdateProduct("/products/{id}"),
-	DeleteProduct("/products/{id}");
+	UpdateProduct("/products/{key}"),
+	DeleteProduct("/products/{key}"),
+	FilteredProduct("products/category/{key}");
 
 	private String resource;
 	
@@ -19,7 +20,7 @@ public enum ResourceAPI {
 		return resource;
 	}
 
-	public String getResourceWithID(String id) {
-		return (resource.replace("{id}", id));
+	public String getResourceWithkey(String key) {
+		return (resource.replace("{key}", key));
 	}
 }

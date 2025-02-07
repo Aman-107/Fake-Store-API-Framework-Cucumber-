@@ -55,4 +55,5 @@ public class Utils {
 		JsonPath js = response.jsonPath();
 		return (js.getInt(key));	
 	}
+
 }

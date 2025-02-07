@@ -8,6 +8,8 @@ public class FakeStoreAPI {
 		
 		RestAssured.baseURI = "https://fakestoreapi.com";
 		
+		String str = "products/category/{type}";
+		System.out.println(str.split("}")[0]);
 		// Create a new user
 	}
 
