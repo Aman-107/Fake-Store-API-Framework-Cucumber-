@@ -1,7 +1,6 @@
 package StepDefinations;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.lessThan;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import Resources.Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.common.mapper.TypeRef;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -27,7 +25,7 @@ public class stepDefinations extends Utils {
 	RequestSpecification reqspec;
 	TestDataBuild testDataBuild = new TestDataBuild();
 	Response response;
-	String productId;
+	static String productId;
 	
 	@Given("Add User Payload with {string} and {string}")
 	public void add_user_payload_with_and(String username, String password) throws IOException {
@@ -94,22 +92,8 @@ public class stepDefinations extends Utils {
 	@When("user calls {string} API with id as {string} via {string} https request")
 	public void user_calls_api_with_id_as_via_https_request(String resource, String id,String method) {
 		
-		this.productId = id;
-		
-		ResourceAPI resourceAPI = ResourceAPI.valueOf(resource);
-		System.out.println(resourceAPI.getResource());
-		
-		if(method.equalsIgnoreCase("POST"))
-		response = reqspec.when().post(resourceAPI.getResourceWithID(id));      // Capturing response	
-		
-		else if(method.equalsIgnoreCase("GET"))
-			response = reqspec.when().get(resourceAPI.getResourceWithID(id));
-		
-		else if(method.equalsIgnoreCase("PUT"))
-			response = reqspec.when().put(resourceAPI.getResourceWithID(id));
-		
-		else if(method.equalsIgnoreCase("DELETE"))
-			response = reqspec.when().delete(resourceAPI.getResourceWithID(id));
+		productId = id;
+		resourceApiwithPath(resource,method,id);
 	}
 	
 	@Then("verify {string} in response body should be {int}")
@@ -117,12 +101,6 @@ public class stepDefinations extends Utils {
 		
 		int id = getJsonPathInt(response,value);
 		Assert.assertEquals(int1.intValue(), id);
-	}
-
-	@Given("Add New Product Payload with {string} and {string}")
-	public void add_new_product_payload_with_and(String title, String category) throws IOException {
-		reqspec = given().spec(requestSpecification())
-				.body(testDataBuild.productsBody(title, category,null,null));
 	}
 	
 	@Then("{string} in response body is {string}")
@@ -132,11 +110,55 @@ public class stepDefinations extends Utils {
 		Assert.assertEquals(expectedValue,actualValue);
 	}
 
-	@Given("Update Product Payload with {string} and {string}")
-	public void update_product_payload_with_and(String description, String image) throws IOException {
+	@Given("Add New Product Payload with {string}, {double},{string}, {string} and {string}")
+	public void add_new_product_payload_with_and(String title, Double price, String description, String image, String category) throws IOException {
 		
 		reqspec = given().spec(requestSpecification())
-				.body(testDataBuild.productsBody(null,null,description, image));
+				.body(testDataBuild.addNewProduct(title, price, description, image, category));
+	}
+
+	@Then("extract {string} in response body")
+	public void extract_in_response_body(String id) {
+		String newProductId = Integer.toString(getJsonPathInt(response,id));
+		System.out.println(newProductId);
+		System.out.println(productId);
+		productId = newProductId;
+		System.out.println(productId);
+	}
+
+	@Given("Update Product Payload with {string} and {string}")
+	public void update_product_payload_with_and(String description, String image) throws IOException {
+	    reqspec = given().spec(requestSpecification())
+	    		.body(testDataBuild.updateProduct(description, image));
+	}
+
+	@When("user calls {string} API with key as extracted via {string} https request")
+	public void user_calls_api_with_key_as_extracted_via_https_request(String resource, String method) {
+	    
+		resourceApiwithPath(resource,method,productId);
+	}
+	
+	public void resourceApiwithPath(String resource, String method, String key) {
+		
+		ResourceAPI resourceAPI = ResourceAPI.valueOf(resource);
+		System.out.println(resourceAPI.getResource());
+		
+		if(method.equalsIgnoreCase("POST"))
+		response = reqspec.when().post(resourceAPI.getResourceWithID(key));      // Capturing response	
+		
+		else if(method.equalsIgnoreCase("GET"))
+			response = reqspec.when().get(resourceAPI.getResourceWithID(key));
+		
+		else if(method.equalsIgnoreCase("PUT"))
+			response = reqspec.when().put(resourceAPI.getResourceWithID(key));
+		
+		else if(method.equalsIgnoreCase("DELETE"))
+			response = reqspec.when().delete(resourceAPI.getResourceWithID(key));
+	}
+
+	@Given("Delete the product by passing the id.")
+	public void delete_the_product_by_passing_the_id() throws IOException {
+	    reqspec = given().spec(requestSpecification());
 	}
 }
 

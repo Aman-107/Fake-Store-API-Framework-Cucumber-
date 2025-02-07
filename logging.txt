@@ -15,24 +15,24 @@ Body:
     "password": "m38rmF$"
 }
 HTTP/1.1 200 OK
-Date: Thu, 06 Feb 2025 14:48:42 GMT
+Date: Fri, 07 Feb 2025 04:34:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"94-U48em6wABO2v7MhFQ3jm1fZ/EmU"
+etag: W/"94-3knfgrX+1M41BSIE21+ZCs1xWkE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=DXjJxtGO7VXSSBVTd6G1dLkiY9l7NMxyXo8zmKj8C0tjr2AOpenshoiu3syYedMRa4MmkuiRi1Ka6NFFAdaE1k7TvfEdSCg2PFyXr%2BUO0RYlyehtyP0XIjY3hdSReThc33a1"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9hwpw10%2FgG7mhwwrkz70vaugtOaz9UQX7guIoCL5fpXq%2BiQR9fo0MP45lm0Z9tvGo0uKId4Z9n%2FXQlq4G8vycJ2S0JCTf%2Bb283hoL75GAopwX%2B0Wsc330J3ybq2LxAwqfsHF"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90dbf153dd724886-LHR
+CF-RAY: 90e0aadfc8069473-LHR
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=184513&min_rtt=183404&rtt_var=69569&sent=6&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=893&delivery_rate=22900&cwnd=252&unsent_bytes=0&cid=86d754282b7832aa&ts=389&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=176823&min_rtt=175405&rtt_var=66790&sent=6&recv=6&lost=0&retrans=0&sent_bytes=3127&recv_bytes=893&delivery_rate=23944&cwnd=252&unsent_bytes=0&cid=789b535426e8bf18&ts=387&x=0"
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXIiOiJqb2huZCIsImlhdCI6MTczODg1MzMyMn0.1ukfLpcLb8yZcDgC30pEmQjpzeYGeOr8q2llyReJuuU"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXIiOiJqb2huZCIsImlhdCI6MTczODkwMjg2Nn0.mjwWE8Jo8mkcV_lROhvZZoEiTyEZvKr9R6ZMIc--Syg"
 }
 Request method:	GET
 Request URI:	https://fakestoreapi.com/products
@@ -47,7 +47,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 06 Feb 2025 14:48:43 GMT
+Date: Fri, 07 Feb 2025 04:34:26 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -55,13 +55,13 @@ access-control-allow-origin: *
 etag: W/"297c-h+n6NsR3M51S6528jZo3BluzvtU"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=P0DOrF0zTG2JjEMMWvEsZG5PBP87U9DIZyGF%2FdvXXgzk48mtP3cX8ATDjz8vlka94YONY82xS4S6imHTjXh4Fcz9KMCUf59redmNS%2BS50gE4O4iGGKbe5Pt3l4aRy8EJHFUD"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=x0LkiWUYVfsnlrDDmkAZN3iR%2FFFZku3c4NbXQX0wlis4U9nxWDFyGmRvFOfWS%2Fuj89iyiY0j0Tfv6NDHDDqq5nyx8sfefGS6w2w9Pu3AszMWIkp17KZk%2BVIo%2FSINxr7cI7Yy"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90dbf158d8ccbef5-LHR
+CF-RAY: 90e0aae519b6f257-LHR
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=181525&min_rtt=180661&rtt_var=68365&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3129&recv_bytes=789&delivery_rate=23247&cwnd=252&unsent_bytes=0&cid=113f8eea0896dcd0&ts=235&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=184923&min_rtt=184921&rtt_var=69350&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=789&delivery_rate=22709&cwnd=252&unsent_bytes=0&cid=3523d6f4f6cd72b0&ts=235&x=0"
 
 [
     {
@@ -318,7 +318,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 06 Feb 2025 14:48:44 GMT
+Date: Fri, 07 Feb 2025 04:34:27 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -326,13 +326,13 @@ access-control-allow-origin: *
 etag: W/"297c-h+n6NsR3M51S6528jZo3BluzvtU"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=JWNOfsrMs6JMiNZ8Z%2BqQZ4Yrj1AnzoA%2BOoUlnze%2Byj8X0zdjK3fc0sQtK3Y28w%2FVPIKyfETLH3HiXeM1s%2BtQXqzjr35rCR6DTeqcoLz56EiPJqSUBTva43rQovfFHx86ZEMG"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=%2FiVYpZR1xsb2MM50PL%2BXLKmRCMkDnK3BGbXnkvz8fHLZIHMjXtZud1E5EW6lcrSyFgMyScHgYY4Ib4IQsZAoK%2FGFeOmZ4hJgrWmXokFCkTK9RVIRda3pe7bwYcIKXOYDy2Gj"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90dbf15e687e9521-LHR
+CF-RAY: 90e0aaeaa81cbd6d-LHR
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=195285&min_rtt=195175&rtt_var=73269&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3127&recv_bytes=789&delivery_rate=21519&cwnd=252&unsent_bytes=0&cid=e583e228a6ccdcda&ts=238&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=186441&min_rtt=185181&rtt_var=70343&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=789&delivery_rate=22680&cwnd=252&unsent_bytes=0&cid=2efb2ab5890e5e61&ts=218&x=0"
 
 [
     {
@@ -589,7 +589,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 06 Feb 2025 14:48:45 GMT
+Date: Fri, 07 Feb 2025 04:34:28 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -597,13 +597,13 @@ access-control-allow-origin: *
 etag: W/"2d2-QzYw+X+hXsi2K/VFAJ3/XdI9Dbc"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Up28dcYz6iJlQeDbBIfj4UBFvgZGzwkxfdPthkZT9vspsOgd5ntpVekgftLuvTitb70eQqkWoO4xWiSQhnTbgQ2BMJUqEzh91orXsgv2vyCJrF%2BXoe0FW5kIKEYbgpyR3fQp"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=fXFR5BWgvWAcdfEulH36C6APVXlqf6xJp8QB8LeB1ep08uI016dAuO4dlTR5UX3MvMZQf1sfMndKR%2BTvdCZEvFj2VW%2FImx1ZYv4XmHI9cMEc4V03Fq5fW9cMoWsKi5ZtDnom"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90dbf16278b179ae-LHR
+CF-RAY: 90e0aaef7e8303bb-LHR
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=181996&min_rtt=181899&rtt_var=68407&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=792&delivery_rate=22991&cwnd=252&unsent_bytes=0&cid=4eae90b369e290ad&ts=216&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=262329&min_rtt=200231&rtt_var=119443&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=792&delivery_rate=20975&cwnd=252&unsent_bytes=0&cid=859fd2b7d9523df0&ts=232&x=0"
 
 {
     "id": 10,
@@ -631,38 +631,38 @@ Multiparts:		<none>
 Body:
 {
     "image": "https://i.pravatar.cc",
-    "price": 20.5,
+    "price": 13.5,
     "description": "lorem ipsum set",
     "title": "test product",
     "category": "electronic"
 }
 HTTP/1.1 200 OK
-Date: Thu, 06 Feb 2025 14:48:46 GMT
+Date: Fri, 07 Feb 2025 04:34:29 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"85-asOw58oggcdvEQjmHf+IlBwWocw"
+etag: W/"85-Wc9onS4WiYRqBYCEA9mjLdeESpg"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xgwoM6KxuSkxpt9ZwOU8iGu5EUIVpYtAN%2F01nHWdR3E0pHpnJ2tR7b0DQN%2BAZSVeG9f%2B%2BQdks5ZZ5gCeDhlSlZwaIhKb2uRxL287mGeC%2BCZvgVQRIH9riDFVbtQpvNsDPOL2"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=i%2FwJlQpMCM17m4hftFjpvUF2c%2Fb7xsB1qQ8foK2So7RnQbeL4HZjTvKbQiwrCupfMJbcsUxy%2BKGRZemSjjQT44tOwcQcN7nOJ%2F6%2BFZlc%2BUJYgxFS1jJrFnoPK7Wgo%2BiG4CDz"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90dbf1697b7e9521-LHR
+CF-RAY: 90e0aaf72a0271db-LHR
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=190454&min_rtt=187934&rtt_var=72276&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=936&delivery_rate=22348&cwnd=252&unsent_bytes=0&cid=156040d0c0e3ec3f&ts=228&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=206741&min_rtt=204795&rtt_var=78188&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3129&recv_bytes=936&delivery_rate=20508&cwnd=252&unsent_bytes=0&cid=b6f07d383590bf68&ts=238&x=0"
 
 {
     "id": 21,
     "title": "test product",
-    "price": 20.5,
+    "price": 13.5,
     "description": "lorem ipsum set",
     "image": "https://i.pravatar.cc",
     "category": "electronic"
 }
-Request method:	GET
-Request URI:	https://fakestoreapi.com/products/10
+Request method:	PUT
+Request URI:	https://fakestoreapi.com/products/21
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -674,14 +674,51 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "image": "https://i.pravatar.cc",
-    "price": 20.5,
-    "description": "lorem ipsum set",
+    "image": "https://i.cars.png",
+    "price": 13.5,
+    "description": "shadow ipsum set",
     "title": "test product",
     "category": "electronic"
 }
 HTTP/1.1 200 OK
-Date: Thu, 06 Feb 2025 14:48:48 GMT
+Date: Fri, 07 Feb 2025 04:34:30 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"83-bGTFlCh4+5tur+19vNVECrwoiGQ"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=6JEbMBTbvXyO3Uouqz6yklJrzI4n2HIZ0%2FAutc1XuX%2FcV9NidoN%2Fr%2Bncz5P4KydTbtMGZt6ibusr2e60YUrGdpq33MadOF5kIvudCkCGgUdrFfW7OkBrQMDjYZDDfZcidn3B"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 90e0aafb3df6f257-LHR
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=183335&min_rtt=183130&rtt_var=68820&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3129&recv_bytes=936&delivery_rate=22934&cwnd=252&unsent_bytes=0&cid=7a0fee6008eb668b&ts=229&x=0"
+
+{
+    "id": 21,
+    "title": "test product",
+    "price": 13.5,
+    "description": "shadow ipsum set",
+    "image": "https://i.cars.png",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/10
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 04:34:31 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -689,13 +726,13 @@ access-control-allow-origin: *
 etag: W/"2d2-QzYw+X+hXsi2K/VFAJ3/XdI9Dbc"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=huKrZWosQg3j9c3%2BwrW%2BDw%2FvdbpJj5QX6cJ1H0PdOirmUWnPeZY7ovF4g78PSXWneER9kJgCxKkCeoHb1FS8uoTRh5h1z0kyDzikgKwJvT2jRuwomZHT4JhHyx%2BCmxXh%2BOxr"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=mqekfMNTxERSQkRE1G3hHx65Hp3r5aCK3wBkkleNcRRotqdhFaAAc%2Fu6q3vFe7bd69LJThH4ku7mnGXpSmaaq6My4v3BrvDmnjOfcMkKSpREXvxSjxS%2FQoH%2B9bjJtLtH5%2F8f"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 90dbf176f89179ae-LHR
+CF-RAY: 90e0ab002bd1bd6d-LHR
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=217611&min_rtt=217611&rtt_var=108805&sent=11&recv=10&lost=0&retrans=3&sent_bytes=6256&recv_bytes=938&delivery_rate=3001&cwnd=250&unsent_bytes=0&cid=70c6c97ad0454270&ts=1614&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=205603&min_rtt=197133&rtt_var=79975&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=795&delivery_rate=21305&cwnd=252&unsent_bytes=0&cid=63d225c1b7390ffb&ts=324&x=0"
 
 {
     "id": 10,

@@ -43,30 +43,25 @@ public class TestDataBuild {
 				+ "                \"password\": \""+password+"\"\r\n"
 				+ "}");
 	}
-
-	public HashMap<String, Object> productsBody(String title, String category,String description, String image) {
-		
-		HashMap<String,Object> payload = new HashMap<String,Object>();
-		
-		if(title != null) {
-		payload.put("title", title);
-		} else payload.put("title", "test product");
-		
-		payload.put("price", 20.5);
-		
-		if(description != null) {
-			payload.put("description", description);
-			} else payload.put("description", "lorem ipsum set");
-		
-		if(image != null) {
-			payload.put("image", image);
-			} else payload.put("image", "https://i.pravatar.cc");
-		
-		if(category != null) {
-			payload.put("category", category);
-			} else payload.put("category", "electronic");
 	
-		return payload;
+	private static HashMap<String,Object> newProductpayload = new HashMap<String,Object>();
+	public HashMap<String, Object> addNewProduct(String title, Double price, String description, String image, String category) {
+
+		newProductpayload.put("title", title);
+		newProductpayload.put("price", price);
+		newProductpayload.put("description", description);
+		newProductpayload.put("image", image);
+		newProductpayload.put("category", category);
 		
+		return newProductpayload;
+		
+	}
+
+	public HashMap<String, Object> updateProduct(String description,String image) {
+		
+		newProductpayload.put("description", description);
+		newProductpayload.put("image", image);
+		
+		return newProductpayload;
 	}
 }

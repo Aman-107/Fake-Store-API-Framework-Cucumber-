@@ -6,7 +6,8 @@ public enum ResourceAPI {
 	GetAllProducts("/products"),
 	GetSingleProducts("/products/{id}"),
 	AddNewProducts("/products"),
-	UpdateProduct("/products/{id}");
+	UpdateProduct("/products/{id}"),
+	DeleteProduct("/products/{id}");
 
 	private String resource;
 	

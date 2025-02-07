@@ -31,31 +31,37 @@ And verify "id" in response body should be 10
 
 @ProductsAPI 
 Scenario Outline: Verify if the Add New product is successfully
-Given Add New Product Payload with "<title>" and "<category>"
+Given Add New Product Payload with "<title>", <price>,"<description>", "<image>" and "<category>"
 When user calls "AddNewProducts" API with "POST" https request
 Then the API got success with status code 200
 And "title" in response body is "test product"
 And "Server" in response header is "cloudflare"
+And extract "id" in response body
 
 Examples: 
-| title           | category    |
-|  test product   | electronic  |
-
-# using hashMap create full payloads
+| title           |   price  |      description    |   image               |    category   |
+|  test product   |  13.5    | 		lorem ipsum set  | https://i.pravatar.cc |   electronic  |
 
 @ProductsAPI 
 Scenario Outline: Verify if the product is updated successfully
-Given Update Product Payload with "<description>" and "<image>"
-When user calls "UpdateProduct" API with id as "10" via "GET" https request
+Given Update Product Payload with "<description>" and "<image>" 
+When user calls "UpdateProduct" API with key as extracted via "PUT" https request
 Then the API got success with status code 200
 And "title" in response body is "test product"
-And "description" in response body is "lorem ipsum set"
+And "description" in response body is "shadow ipsum set"
 And "Server" in response header is "cloudflare" 
 
 Examples: 
 |  description      |       image           |
-| lorem ipsum set   | https://i.pravatar.cc |
+| shadow ipsum set  | https://i.cars.png    |
 
+@ProductsAPI 
+Scenario: Verify if the product is deleted successfully
+Given Delete the product by passing the id.
+When user calls "DeleteProduct" API with id as "10" via "DELETE" https request
+Then the API got success with status code 200
+And "Server" in response header is "cloudflare"
+And verify "id" in response body should be 10 
 
 #UpdateProduct
 ## **2. Products API Scenarios** (`/products`)
