@@ -1,11 +1,17 @@
 package Resources;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
+import POJO.AddNewCart;
+import POJO.AddNewCart_Products;
 import POJO.CreateLoginReq_Address;
 import POJO.CreateLoginReq_Address_Geolocation;
 import POJO.CreateLoginReq_Name;
 import POJO.CreateloginReq;
+import POJO.GetAllCarts;
+import POJO.GetAllCarts_Products;
 
 public class TestDataBuild {
 
@@ -64,4 +70,27 @@ public class TestDataBuild {
 		
 		return newProductpayload;
 	}
+
+	
+	
+	private AddNewCart addNewCart = new AddNewCart();
+    public List<AddNewCart_Products> productsList = new ArrayList<>();
+
+    public void addNewCart(int userId, String date) {
+        addNewCart.setUserId(userId);
+        addNewCart.setDate(date);
+        addNewCart.setProducts(productsList);
+    }
+
+    public void addNewCart_Products(int productId, int quantity) {
+        AddNewCart_Products addNewCart_Products = new AddNewCart_Products();
+        addNewCart_Products.setProductId(productId);
+        addNewCart_Products.setQuantity(quantity);
+        
+        productsList.add(addNewCart_Products);  // ✅ Corrected this part
+    }
+
+    public AddNewCart build() {
+        return addNewCart;  // ✅ Returns the final payload
+    }
 }

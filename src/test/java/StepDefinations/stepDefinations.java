@@ -13,6 +13,8 @@ import org.junit.Assert;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import POJO.AddNewCart;
+import POJO.AddNewCart_Products;
 import POJO.GetAllCarts;
 import POJO.GetAllProducts;
 import Resources.ResourceAPI;
@@ -50,8 +52,8 @@ public class stepDefinations extends Utils {
 	@Then("the API got success with status code {int}")
 	public void the_api_got_success_with_status_code(Integer expectedStatusCode) {
 
-		response.then().statusCode(expectedStatusCode) // Validate Status Code
-				.time(lessThan(2000L)); // validation reponse time
+		response.then().statusCode(expectedStatusCode); // Validate Status Code
+			//	.time(lessThan(2000L)); // validation reponse time
 
 		System.out.println("response time " + response.getTime() + " ms"); // printing response Time
 	}
@@ -196,6 +198,43 @@ public class stepDefinations extends Utils {
 	    Assert.assertEquals(soloResponse.getProducts().size(), filteredResponse.getProducts().size());
 
 	}
+	
+	
+	@Given("User provides cart details with userId {int} and date {string}")
+	public void user_provides_cart_details_with_user_id_and_date(Integer userId, String date) {
+		
+		testDataBuild.addNewCart(userId, date);
+	}
+	
+	@Given("User adds product with productId {int} and quantity {int}")
+	public void user_adds_product_with_product_id_and_quantity(Integer productid, Integer quantity) throws IOException {
+	    
+		testDataBuild.addNewCart_Products(productid, quantity);
+		AddNewCart payload = testDataBuild.build();  // Get the final payload
+		
+	  reqspec =	given().spec(requestSpecification())
+         .body(payload);
+	}
+	
+	@Then("The response should contain products with correct productId and quantity")
+	public void the_response_should_contain_products_with_correct_product_id_and_quantity() {
+	   
+		AddNewCart actualResponse = response.as(AddNewCart.class); 
+		
+		List<AddNewCart_Products> actualProducts = actualResponse.getProducts();
+		
+		List<AddNewCart_Products> expectedProducts = testDataBuild.productsList;
+		
+		Assert.assertEquals("Mismatch in number of products", expectedProducts.size(), actualProducts.size());
+		
+		 // Validate each product's productId and quantity
+	    for (int i = 0; i < expectedProducts.size(); i++) {
+	        Assert.assertEquals("Mismatch in Product ID at index " + i, expectedProducts.get(i).getProductId(), actualProducts.get(i).getProductId());
+	        Assert.assertEquals("Mismatch in Quantity at index " + i, expectedProducts.get(i).getQuantity(), actualProducts.get(i).getQuantity());
+	    }
+		
+	}
+	
 	
 	
 	

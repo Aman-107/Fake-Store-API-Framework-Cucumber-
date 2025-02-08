@@ -99,6 +99,22 @@ And verify "Server" in response header is "cloudflare"
 And verify "id" in response body should be 2
 And verify response should be from "GetAllCarts" for id "2" passed
 
+@CartsAPI 
+Scenario Outline: User creates a new cart with dynamic product details
+Given User provides cart details with userId <userId> and date "<date>"
+And User adds product with productId <productId1> and quantity <quantity1>
+And User adds product with productId <productId2> and quantity <quantity2>
+And User adds product with productId <productId3> and quantity <quantity3>
+When user calls "GetAllCarts" API with "POST" https request
+Then the API got success with status code 200
+And verify "userId" in response body should be 1
+And The response should contain products with correct productId and quantity
+And extract "id" in response body
+
+Examples:
+| userId | date                      | productId1 | quantity1 | productId2 | quantity2 | productId3 | quantity3 |
+| 1      | 2024-07-02T00:00:00.000Z  | 2          | 4         | 1          | 10        | 5          | 2         |
+#| 2      | 2025-11-15T00:00:00.000Z  | 3          | 1         | 4          | 5         | 6          | 8         |
 
 # **4. Cart API Scenarios** (`/carts`)
 # **Basic CRUD Operations**

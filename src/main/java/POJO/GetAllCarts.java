@@ -10,7 +10,6 @@ public class GetAllCarts {
 	private List<GetAllCarts_Products> products;
 	private int __v; 
 	
-	
 	public int getId() {
 		return id;
 	}
