@@ -72,3 +72,44 @@ When user calls "DeleteProduct" API with key as "10" via "DELETE" https request
 Then the API got success with status code 200
 And verify "Server" in response header is "cloudflare"
 And verify "id" in response body should be 10 
+
+
+@ProductsAPI
+Scenario: Verify if the categories API giving responses
+Given Get all categories
+When user calls "CategoriesOfProduct" API with "GET" https request
+Then the API got success with status code 200
+And verify "Server" in response header is "cloudflare"
+And verify categories list in response body is not null 
+
+
+@CartsAPI
+Scenario: Verify if the All Carts Products API is working properly
+Given Get All Carts list
+When user calls "GetAllCarts" API with "GET" https request
+Then the API got success with status code 200
+And verify "Server" in response header is "cloudflare"  
+
+@CartsAPI 
+Scenario: Verify if the single Cart is working properly
+Given Get a single cart by passing the id.
+When user calls "GetSingleCart" API with key as "2" via "GET" https request
+Then the API got success with status code 200
+And verify "Server" in response header is "cloudflare"
+And verify "id" in response body should be 2
+And verify response should be from "GetAllCarts" for id "2" passed
+
+
+# **4. Cart API Scenarios** (`/carts`)
+# **Basic CRUD Operations**
+#- ✅ **GET** all carts (`GET /carts`)
+#- ✅ **GET** a specific cart (`GET /carts/{id}`)
+#- ✅ **POST** a new cart (`POST /carts`)
+#- ✅ **PUT** update a cart (`PUT /carts/{id}`)
+#- ✅ **DELETE** a cart (`DELETE /carts/{id}`)
+
+# **Data Validations**
+#- ✅ Validate cart contains **valid products and user IDs**
+#- ✅ Validate response schema for cart API
+#- ✅ Validate **filtering by date range** (`GET /carts?startdate={}&enddate={}`)
+#- ✅ Validate **cart retrieval by user ID** (`GET /carts/user/{userId}`)

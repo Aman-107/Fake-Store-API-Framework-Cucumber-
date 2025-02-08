@@ -5,10 +5,15 @@ import static io.restassured.RestAssured.given;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.junit.Assert;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import POJO.GetAllCarts;
 import POJO.GetAllProducts;
 import Resources.ResourceAPI;
 import Resources.TestDataBuild;
@@ -141,6 +146,59 @@ public class stepDefinations extends Utils {
 	public void delete_the_product_by_passing_the_id() throws IOException {
 	    reqspec = given().spec(requestSpecification());
 	}
+	
+	@Given("Get all categories")
+	public void get_all_categories() throws IOException {
+	    
+		reqspec = given().spec(requestSpecification());
+	}
+	
+	@Then("verify categories list in response body is not null")
+	public void verify_categories_list_in_response_body_is_not_null() {
+	   
+		List<String> categories = new ArrayList<String>();
+		categories = response.jsonPath().getList("$");     // Extract JSON array as List
+	
+		Assert.assertFalse(categories.isEmpty());       // can also use the concept of (list.size > 0)
+	}
+	
+	@Given("Get All Carts list")
+	public void get_all_carts_list() throws IOException {
+	    reqspec = given().spec(requestSpecification());
+	}
+	
+	@Given("Get a single cart by passing the id.")
+	public void get_a_single_cart_by_passing_the_id() throws IOException {
+		reqspec = given().spec(requestSpecification()); 
+	}
+	
+	@Then("verify response should be from {string} for id {string} passed")
+	public void verify_response_should_be_from_for_id_passed(String resource,String id) throws IOException {
+	    
+		GetAllCarts soloResponse = response.as(GetAllCarts.class);
+		
+		get_a_single_cart_by_passing_the_id();
+		user_calls_api_with_https_request(resource,"GET");
+		List<HashMap<String,Object>> cartsList = response.jsonPath().getList("$");  // Extract list of all carts
+		
+		// Filter carts where id = "passed_arguments"
+		List<HashMap<String,Object>> filteredCart = cartsList.stream().filter(s->s.get("id").toString().equals(id))
+												.collect(Collectors.toList());	
+	
+	    Assert.assertFalse(filteredCart.isEmpty());
+
+	    ObjectMapper objectMapper = new ObjectMapper();                // Converting filtered response to POJO
+	    GetAllCarts filteredResponse = objectMapper.convertValue(filteredCart.get(0), GetAllCarts.class);
+	    
+	    Assert.assertEquals(soloResponse.getId(), filteredResponse.getId());
+	    Assert.assertEquals(soloResponse.getUserId(), filteredResponse.getUserId());
+	    Assert.assertEquals(soloResponse.getDate(), filteredResponse.getDate());
+	    Assert.assertEquals(soloResponse.getProducts().size(), filteredResponse.getProducts().size());
+
+	}
+	
+	
+	
 	
 	
 	

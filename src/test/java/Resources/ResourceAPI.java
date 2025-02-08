@@ -3,12 +3,17 @@ package Resources;
 public enum ResourceAPI {
 	
 	UserLogin("/auth/login"),
+	
 	GetAllProducts("/products"),
 	GetSingleProducts("/products/{key}"),
 	AddNewProducts("/products"),
 	UpdateProduct("/products/{key}"),
 	DeleteProduct("/products/{key}"),
-	FilteredProduct("products/category/{key}");
+	FilteredProduct("/products/category/{key}"),
+	CategoriesOfProduct("/products/categories"),
+	
+	GetAllCarts("/carts"),
+	GetSingleCart("/carts/{key}");
 
 	private String resource;
 	
