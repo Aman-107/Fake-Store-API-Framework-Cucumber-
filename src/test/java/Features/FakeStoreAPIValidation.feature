@@ -1,5 +1,6 @@
 Feature: Validating Fake Store API
 
+
 @LoginAPI
 Scenario Outline: Verify if user has successfully Loged In
 Given Add User Payload with "<username>" and "<password>"
@@ -80,7 +81,7 @@ Given Get all categories
 When user calls "CategoriesOfProduct" API with "GET" https request
 Then the API got success with status code 200
 And verify "Server" in response header is "cloudflare"
-And verify categories list in response body is not null 
+And verify categories list in response body is not null
 
 
 @CartsAPI
@@ -116,16 +117,28 @@ Examples:
 | 1      | 2024-07-02T00:00:00.000Z  | 2          | 4         | 1          | 10        | 5          | 2         |
 #| 2      | 2025-11-15T00:00:00.000Z  | 3          | 1         | 4          | 5         | 6          | 8         |
 
-# **4. Cart API Scenarios** (`/carts`)
-# **Basic CRUD Operations**
-#- ✅ **GET** all carts (`GET /carts`)
-#- ✅ **GET** a specific cart (`GET /carts/{id}`)
-#- ✅ **POST** a new cart (`POST /carts`)
-#- ✅ **PUT** update a cart (`PUT /carts/{id}`)
-#- ✅ **DELETE** a cart (`DELETE /carts/{id}`)
 
-# **Data Validations**
-#- ✅ Validate cart contains **valid products and user IDs**
-#- ✅ Validate response schema for cart API
-#- ✅ Validate **filtering by date range** (`GET /carts?startdate={}&enddate={}`)
-#- ✅ Validate **cart retrieval by user ID** (`GET /carts/user/{userId}`)
+@CartsAPI 
+Scenario Outline: Verify if the cart is updated successfully
+Given Update Cart Payload with userId <userId> and date "<date>"
+And User adds product with productId <productId1> and quantity <quantity1>
+When user calls "GetSingleCart" API with key as "11" via "PUT" https request
+Then the API got success with status code 200
+And verify "id" in response body should be 11
+And verify "date" in response body is "2025-11-15T00:00:00.000Z"
+And verify "Server" in response header is "cloudflare" 
+
+Examples:
+| userId | date                      | productId1 | quantity1 |
+#| 1      | 2024-07-02T00:00:00.000Z  | 2          | 4         | 1          | 10        | 5          | 2         |
+| 2      | 2025-11-15T00:00:00.000Z  | 3          | 1         | 
+
+
+@CartsAPI 
+Scenario: Verify if the Cart is deleted successfully
+Given Delete the product by passing the id.
+When user calls "GetSingleCart" API with key as "6" via "DELETE" https request
+Then the API got success with status code 200
+And verify "Server" in response header is "cloudflare"
+And verify "id" in response body should be 6
+

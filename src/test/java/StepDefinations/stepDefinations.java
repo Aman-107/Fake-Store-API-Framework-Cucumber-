@@ -135,7 +135,7 @@ public class stepDefinations extends Utils {
 	    
 		String id = Integer.toString(getJsonPathInt(response,key));
 		productId = id;
-		//System.out.println(productId);
+		System.out.println(productId);
 	}
 
 	@Given("Update Product Payload with {string} and {string}")
@@ -233,6 +233,12 @@ public class stepDefinations extends Utils {
 	        Assert.assertEquals("Mismatch in Quantity at index " + i, expectedProducts.get(i).getQuantity(), actualProducts.get(i).getQuantity());
 	    }
 		
+	}
+	
+	@Given("Update Cart Payload with userId {int} and date {string}")
+	public void update_cart_payload_with_user_id_and_date(Integer userID, String date) {
+	    
+		user_provides_cart_details_with_user_id_and_date(userID,date);
 	}
 	
 	
