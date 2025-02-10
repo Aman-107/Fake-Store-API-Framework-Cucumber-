@@ -39,7 +39,79 @@ A Behavior-Driven Development (BDD) framework for testing Fake Store API (https:
 ## Framework Structure
 
 ```
-
+Fake-Store-API-Framework-Cucumber/
+├── src/
+│   ├── main/
+│   │    ├── java/
+│   │         └──POJO/                                    # serializing and deserializing JSON data
+│   │            ├── AddNewCart.java
+│   │            ├── AddNewCart_Products.java	
+│   │            ├── CreateLoginReq.java	
+│   │            ├── CreateLoginReq_Name.java
+│   │            ├── CreateLoginReq_Address.java
+│   │            ├── CreateLoginReq_Address_Geolocation.java	
+│   │            ├── GetAllCarts.java
+│   │            ├── GetAllCarts_Products.java
+│   │            ├── GetAllProducts.java
+│   │            └── GetAllProducts_Ratings.java
+│   │			
+│   └── test/
+│        ├── java/
+│            ├── Features/			                          # Feature files   
+│            │   ├── products.feature                     # Product scenarios
+│            │   ├── carts.feature                        # Cart scenarios
+│            │   ├── users.feature                        # User scenarios
+│            │   └── authentication.feature               # Auth scenarios
+│            │	
+│            ├── Resources/ 	                          
+│            │	 ├── ResourceAPI.java                     # Enumerations - API endpoints constants
+│            │	 ├── Utils.java                           # reusable utility classes (spec builder, JSON parsing etc) 
+│            │	 ├── TestDataBuild.java                   #Builds dynamic payloads
+│            │	 └── GlobalProperties.properties          #environment configurations	
+│            │	 
+│			       ├── Runner/
+│            │   └── TestRunner.java                      # Main Cucumber runner class			 
+│			       │
+│			       ├── Scrap/
+│            │   ├── FakeStoreAPI.java                    # Pseudo Code
+│            │   └── UseCases.java                        # Uses Case
+│            │   
+│			       ├── StepDefinitions/		                     # Step definition classes                
+│            │   ├── ProductsStepDefs.java                # Product API steps
+│            │   ├── ProductsStepDefs.java                # Product API steps
+│            │   ├── ProductsStepDefs.java                # Product API steps
+│            │   ├── CartsStepDefs.java                   # Cart API steps
+│            │   ├── UsersStepDefs.java                   # User API steps
+│            │   └── AuthStepDefs.java                    # Authentication steps
+│            │
+│            ├── utilities/                               # Helper classes
+│            │   ├── APIRequestBuilder.java               # Request specification builder
+│            │   ├── TestContext.java                     # Shared test context
+│            │   ├── ConfigReader.java                    # Config.properties reader
+│            │   ├── ResponseValidator.java               # Response validation utils
+│            │   └── SchemaValidator.java                 # JSON schema validation
+│            │
+│            │
+│            ├── listeners/                               # Hooks and listeners
+│            │   └── TestListener.java                    # Cucumber hooks
+│            │
+│            │
+│            ├── schemas/                                 # JSON schemas
+│            │   ├── product-schema.json
+│            │   ├── cart-schema.json
+│            │   └── user-schema.json
+│            │
+│            ├── testdata/                                # Test data files
+│                ├── testdata.json
+│                └── testdata.csv
+│
+├── target/                                               # Generated files
+│   ├── cucumber-reports/                                 # Cucumber HTML reports
+│   ├── jsonReport/                                       # Test cases json Responses
+│   └── surefire-reports/                                 # JUnit XML reports
+│                                                         
+├── logging.txt                                           # Logs of the Requests
+└── pom.xml                                               # Maven dependencies
 ```
 
 ## Getting Started
