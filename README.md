@@ -57,7 +57,7 @@ Fake-Store-API-Framework-Cucumber/
 │   │			
 │   └── test/
 │        ├── java/
-│            ├── Features/			                          # Feature files   
+│            ├── Features/                                # Feature files   
 │            │   ├── products.feature                     # Product scenarios
 │            │   ├── carts.feature                        # Cart scenarios
 │            │   ├── users.feature                        # User scenarios
