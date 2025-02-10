@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src//test//java//Features//FakeStoreAPIValidation.feature",
-glue= {"StepDefinations"})
+plugin="json:target/jsonReports/FakeStoreReports.json",glue= {"StepDefinations"})
 public class TestRunner {
 	
 }
