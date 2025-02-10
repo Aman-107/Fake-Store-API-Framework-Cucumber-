@@ -1,7 +1,3 @@
-Rest Assured : 
-
-Here's a professional README.md for your Fake Store API Framework with Cucumber:
-
 # Fake Store API Automation Framework (Cucumber BDD)
 
 [![Java](https://img.shields.io/badge/Java-11%2B-blue)](https://www.oracle.com/java/)
