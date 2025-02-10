@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>10 Feb 2025, 11:45</td>
+      <td>10 Feb 2025, 11:55</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@LoginAPI</td>
-          <td      class="passed"    >9</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >7</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">9</td>
 
-          <td  class="passed"    >2</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="4424640200">4.424</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="7166610800">7.166</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -180,15 +180,16 @@ $(document).ready(function() {
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_226922064.html">@LoginAPI</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
 </div>
 
 
-  <span class="lead-duration duration">3.380</span>
+  <span class="lead-duration duration">4.299</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify if the User has been created successfully</span>
 
@@ -199,16 +200,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,7 +219,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -226,7 +227,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Add New Product Payload with allt he required fileds</span>
 
-  <span class="lead-duration duration">0.814</span>
+  <span class="lead-duration duration">0.802</span>
 
 </div>
 
@@ -253,7 +254,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user calls <span class="argument">&quot;AddNewUser&quot;</span> API with <span class="argument">&quot;POST&quot;</span> https request</span>
 
-  <span class="lead-duration duration">2.127</span>
+  <span class="lead-duration duration">3.054</span>
 
 </div>
 
@@ -280,7 +281,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the API got success with status code <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.034</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -303,11 +304,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">verify <span class="argument">&quot;id&quot;</span> in response body should be <span class="argument">11</span></span>
 
-  <span class="lead-duration duration">0.403</span>
+  <span class="lead-duration duration">0.420</span>
 
 </div>
 
@@ -315,6 +316,24 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected:&lt;11&gt; but was:&lt;1&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinations.stepDefinations.verify_in_response_body_should_be(stepDefinations.java:94)
+	at ✽.verify &quot;id&quot; in response body should be 11(file:///E:/GitHub/FakeStore_Framework_Cucumber/Fake-Store-API-Framework-Cucumber-/src/test/java/Features/FakeStoreAPIValidation.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -330,7 +349,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">verify <span class="argument">&quot;Server&quot;</span> in response header is <span class="argument">&quot;cloudflare&quot;</span></span>
 
@@ -375,13 +394,14 @@ $(document).ready(function() {
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_226922064.html">@LoginAPI</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
 </div>
 
 
-  <span class="lead-duration duration">1.044</span>
+  <span class="lead-duration duration">2.866</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -394,14 +414,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -413,7 +433,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -421,7 +441,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Add User Payload with <span class="argument">&quot;johnd&quot;</span> and <span class="argument">&quot;m38rmF$&quot;</span></span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -448,7 +468,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user calls <span class="argument">&quot;UserLogin&quot;</span> API with <span class="argument">&quot;POST&quot;</span> https request</span>
 
-  <span class="lead-duration duration">1.039</span>
+  <span class="lead-duration duration">2.860</span>
 
 </div>
 
@@ -475,7 +495,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the API got success with status code <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 

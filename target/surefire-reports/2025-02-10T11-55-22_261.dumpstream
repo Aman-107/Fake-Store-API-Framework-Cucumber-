@@ -1,0 +1,5 @@
+# Created at 2025-02-10T11:55:22.423
+Boot Manifest-JAR contains absolute paths in classpath 'E:\GitHub\FakeStore_Framework_Cucumber\Fake-Store-API-Framework-Cucumber-\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

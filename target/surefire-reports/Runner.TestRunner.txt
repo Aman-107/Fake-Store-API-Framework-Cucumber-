@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: Runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.20 s -- in Runner.TestRunner
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.25 s <<< FAILURE! -- in Runner.TestRunner
+Validating Fake Store API.Verify if the User has been created successfully -- Time elapsed: 4.390 s <<< FAILURE!
+java.lang.AssertionError: expected:<11> but was:<1>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinations.stepDefinations.verify_in_response_body_should_be(stepDefinations.java:94)
+	at ✽.verify "id" in response body should be 11(file:///E:/GitHub/FakeStore_Framework_Cucumber/Fake-Store-API-Framework-Cucumber-/src/test/java/Features/FakeStoreAPIValidation.feature:9)
+
