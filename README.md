@@ -71,7 +71,7 @@ Fake-Store-API-Framework-Cucumber/
 │            │	 
 │            ├── Runner/
 │            │   └── TestRunner.java                      # Main Cucumber runner class			 
-│			       │
+│            │
 │            ├── Scrap/
 │            │   ├── FakeStoreAPI.java                    # Pseudo Code
 │            │   └── UseCases.java                        # Uses Case
