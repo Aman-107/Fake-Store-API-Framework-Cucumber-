@@ -24,7 +24,7 @@ A Behavior-Driven Development (BDD) framework for testing Fake Store API (https:
 - **HTML/JSON/XML Reports** generation
 - **Schema Validation** for API responses
 - **CI/CD Ready** (Jenkins/GitHub Actions compatible)
-- **Authentication Testing** (JWT/Basic Auth)
+- **Authentication Testing** (Basic Auth)
 - **Request/Response Logging**
 - **Parallel Test Execution**
 
