@@ -2,6 +2,15 @@ Feature: Validating Fake Store API
 
 
 @LoginAPI
+Scenario: Verify if the User has been created successfully
+Given Add New Product Payload with allt he required fileds
+When user calls "AddNewUser" API with "POST" https request
+Then the API got success with status code 200
+And verify "id" in response body should be 11
+And verify "Server" in response header is "cloudflare"
+
+
+@LoginAPI
 Scenario Outline: Verify if user has successfully Loged In
 Given Add User Payload with "<username>" and "<password>"
 When user calls "UserLogin" API with "POST" https request

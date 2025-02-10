@@ -37,6 +37,12 @@ public class stepDefinations extends Utils {
 	private static String productId;
 	private static List<GetAllProducts> products;
 
+	
+	@Given("Add New Product Payload with allt he required fileds")
+	public void add_new_product_payload_with_allt_he_required_fileds() throws IOException {
+	    reqspec = given().spec(requestSpecification()).body(testDataBuild.createLogin());
+	}
+	
 	@Given("Add User Payload with {string} and {string}")
 	public void add_user_payload_with_and(String username, String password) throws IOException {
 

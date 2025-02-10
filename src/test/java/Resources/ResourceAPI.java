@@ -2,6 +2,7 @@ package Resources;
 
 public enum ResourceAPI {
 	
+	AddNewUser("/users"),
 	UserLogin("/auth/login"),
 	
 	GetAllProducts("/products"),
