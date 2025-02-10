@@ -69,14 +69,14 @@ Fake-Store-API-Framework-Cucumber/
 │            │	 ├── TestDataBuild.java                   #Builds dynamic payloads
 │            │	 └── GlobalProperties.properties          #environment configurations	
 │            │	 
-│			       ├── Runner/
+│            ├── Runner/
 │            │   └── TestRunner.java                      # Main Cucumber runner class			 
 │			       │
-│			       ├── Scrap/
+│            ├── Scrap/
 │            │   ├── FakeStoreAPI.java                    # Pseudo Code
 │            │   └── UseCases.java                        # Uses Case
 │            │   
-│			       ├── StepDefinitions/		                     # Step definition classes                
+│            ├── StepDefinitions/		                     # Step definition classes                
 │            │   ├── ProductsStepDefs.java                # Product API steps
 │            │   ├── ProductsStepDefs.java                # Product API steps
 │            │   ├── ProductsStepDefs.java                # Product API steps
@@ -101,7 +101,7 @@ Fake-Store-API-Framework-Cucumber/
 │            │   ├── cart-schema.json
 │            │   └── user-schema.json
 │            │
-│            ├── testdata/                                # Test data files
+│            └── testdata/                                # Test data files
 │                ├── testdata.json
 │                └── testdata.csv
 │
